@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de Professores - UFMG</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Avaliação de Professores UFMG</h1>
+            <p>Compartilhe sua experiência e ajude outros alunos</p>
+        </header>
+
+        <div class="auth-forms">
+            <!-- Formulário de Login -->
+            <div class="form-container" id="login-form">
+                <h2>Login</h2>
+                <form>
+                    <input type="text" id="login-username" placeholder="Nome de usuário" required>
+                    <input type="password" id="login-password" placeholder="Senha" required>
+                    <button type="submit">Entrar</button>
+                </form>
+                <p class="switch-form">Não tem conta? <a href="#" onclick="showRegister()">Cadastre-se</a></p>
+                <p class="anonymous">Ou <a href="areas.html">acesse como anônimo</a></p>
+            </div>
+
+            <!-- Formulário de Cadastro -->
+            <div class="form-container" id="register-form" style="display:none;">
+                <h2>Criar Conta</h2>
+                <form>
+                    <input type="text" id="register-username" placeholder="Escolha um nome de usuário" required>
+                    <input type="password" id="register-password" placeholder="Crie uma senha" required>
+                    <button type="submit">Cadastrar</button>
+                </form>
+                <p class="switch-form">Já tem conta? <a href="#" onclick="showLogin()">Faça login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
